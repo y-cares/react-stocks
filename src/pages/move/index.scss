@@ -1,0 +1,17 @@
+@import '../../static/scss/index';
+
+.pzyd-time{
+  width: 100%;
+  line-height: 84px;
+  text-align: center;
+  font-size: $font-size-32;
+  color: $color-gray;
+  background-color: #f7f6f6;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  top: 90px;
+  z-index: 1;
+}
+.pzyd-container{
+  padding: 84px 24px 0 24px;
+}

@@ -1,0 +1,50 @@
+@import '../../static/scss/index';
+
+.plate{
+  ol, ul{
+    @include displayflex();
+    border-bottom: 1px solid #eee;
+    li{
+      flex: 1;
+      &:first-child{
+        padding-left: 24px;
+      }
+    }
+  }
+  ol{
+    li{
+      line-height: 70px;
+      text-align: center;
+      font-size: $font-size-32;
+      i{
+        display: inline-block;
+        width: 20px;
+        height: 40px;
+        @include background($gray-plate);
+        vertical-align: -10px;
+        margin: 0 20px;
+        &.up{
+          transform: rotate(180deg)
+        }
+      }
+    }
+  }
+  ul{
+    padding: 20px 0;
+    li{
+      font-size: $font-size-40;
+      text-align: center;
+      &:first-child{
+        text-align: left;
+        h3{
+          font-size: $font-size-36;
+        }
+        p{
+          font-size: $font-size-28;
+          color: $color-gray;
+        }
+      }
+    }
+  }
+}
+

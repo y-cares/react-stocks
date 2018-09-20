@@ -1,0 +1,73 @@
+@import '../../static/scss/index';
+
+.pzyd-item{
+  padding-left: 50px;
+  margin: 20px 0 40px 0;
+  position: relative;
+  &::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: calc(100% + 40px);
+    background-color: #ccc;
+    position: absolute;
+    left: 8px;
+    top: 0;
+  }
+  &::after{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 6px;
+    position: absolute;
+    left: 4px;
+    top: 16px;
+  }
+  h4{
+    color: $color-red;
+    font-size: $font-size-28;
+    padding-bottom: 10px;
+  }
+  p{
+    font-size: $font-size-32;
+    max-height: 180px;
+    overflow: hidden;
+    transition: all .2s ease-in;
+  }
+  .more-info{
+    max-height: 900px;
+  }
+  span{
+    display: block;
+    text-align: right;
+    font-size: $font-size-28;
+    color: $color-orange;
+    padding-top: 10px;
+    position: relative;
+    i{
+      @include background($down-log, 28px);
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      vertical-align: -10px;
+    }
+    &::before{
+      content: '...';
+      color: #333;
+      height: 50px;
+      display: block;
+      position: absolute;
+      right: 6px;
+      top: -40px;
+      background-color: $color-white;
+      box-shadow: -20px 0px 6px $color-white;
+    }
+    &.more{
+      &::before{
+        display: none;
+      }
+    }
+  }
+}

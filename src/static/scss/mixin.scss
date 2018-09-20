@@ -1,0 +1,15 @@
+@mixin background($url, $width: 100%, $left: center, $top: center, $color: transparent) {
+  background-image: url($url);
+  background-size: $width auto;
+  background-position: $left $top;
+  background-color: $color;
+  background-repeat: no-repeat;
+}
+
+@mixin displayflex($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+

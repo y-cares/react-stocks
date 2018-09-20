@@ -1,0 +1,19 @@
+@import '../../static/scss/index';
+
+.news{
+  padding: 24px;
+  > h2{
+    font-size: $font-size-36;
+    padding-top: 24px;
+  }
+  > p{
+    font-size: $font-size-28;
+    color: $color-gray;
+    padding: 20px 0;
+  }
+  > div{
+    font-size: $font-size-32;
+    color: $color-gray;
+  }
+}
+

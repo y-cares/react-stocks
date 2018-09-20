@@ -1,0 +1,120 @@
+@import '../../static/scss/index';
+
+.state-header{
+  @include background($stock-log);
+  height: 330px;
+  padding: 48px;
+  box-sizing: border-box;
+  color: $color-white;
+  border-bottom: 20px solid #eee;
+  h3{
+    font-size: $font-size-40;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  p{
+    font-size: $font-size-36;
+  }
+}
+
+.state-list{
+  border-bottom: 20px solid #eee;
+  h3{
+    background-color: #ebebeb;
+    font-size: $font-size-36;
+    padding: 0 24px;
+    line-height: 90px;
+    span{
+      font-size: 30px;
+      color: $color-gray;
+      float: right;
+      vertical-align: middle;
+      padding-right: 40px;
+      @include background($gray-right, 10%, right);
+    }
+  }
+  div{
+    @include displayflex();
+    padding: 0 24px;
+    ul{
+      flex: 1;
+      @include displayflex(flex-start);
+      padding: 20px 0;
+      h4{
+        font-size: $font-size-32;
+      }
+      p{
+        font-size: $font-size-28;
+        color: $color-gray;
+        padding-top: 10px;
+      }
+      li:last-child{
+        font-size: $font-size-36;
+        margin-left: 40px;
+        &.color-red{
+          color: $color-red;
+        }
+        &.color-green{
+          color: $color-green;
+        }
+      }
+    }
+  }
+}
+
+.state-container{
+  padding: 0 20px;
+  > h3{
+    display: inline-block;
+    margin-top: 30px;
+    border: 1px solid #d43c33;
+    color: $color-red;
+    padding: 0 10px;
+    border-radius: 8px;
+    font-size: $font-size-28;
+  }
+  ul{
+    > li{
+      padding: 20px 0 30px;
+      border-bottom: 1px solid #ebebeb;
+      h4{
+        font-size: $font-size-32;
+        margin-bottom: 10px;
+        &.title-bold{
+          font-weight: bold;
+        }
+      }
+      span{
+        display: block;
+        font-size: $font-size-28;
+        color: $color-gray;
+        margin-bottom: 10px;
+      }
+      p{
+        font-size: 30px;
+        color: $color-gray;
+        margin-bottom: 10px;
+      }
+      div{
+        margin-bottom: 10px;
+      }
+      ol{
+        @include displayflex(space-between);
+        padding-top: 10px;
+        li{
+          width: 320px;
+          background-color: #eee;
+          text-align: left;
+          box-sizing: border-box;
+          padding: 10px 20px;
+          i{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+
