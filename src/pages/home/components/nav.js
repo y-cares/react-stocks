@@ -7,6 +7,11 @@ import {
 } from '../store/actionCreator'
 
 class Nav extends PureComponent {
+  tabNavTitle(index) {
+    const { tabNavClick, changeNavTitle } = this.props
+    changeNavTitle(index)
+    tabNavClick(index)
+  }
   render() {
     const { navIndex, navTitle, changeNavTitle } = this.props
     const newNavTitle = navTitle.toJS()

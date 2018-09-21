@@ -4,4 +4,5 @@ export const SHOW_MORE_NEWS = 'home/show-more-news'
 export const GET_JRJH_DATA = 'home/get-jrjh-data'
 export const GET_STATE_DATA = 'home/get-state-data'
 export const GET_STATE_ITEM = 'home/get-state-item'
+export const GET_COMPONENT_OFFSETTOP = 'home/get-component-offsetTop'
 

@@ -5,7 +5,8 @@ import {
   SHOW_MORE_NEWS,
   GET_JRJH_DATA,
   GET_STATE_DATA,
-  GET_STATE_ITEM
+  GET_STATE_ITEM,
+  GET_COMPONENT_OFFSETTOP
 } from './constants'
 
 
@@ -17,7 +18,8 @@ const defaultState = fromJS({
   jrjhData: [],
   stateOnData: [],
   stateOffData: [],
-  stateItem: {}
+  stateItem: {},
+  componentOffsetTop: []
 })
 
 export default (state = defaultState, action) => {
@@ -42,6 +44,8 @@ export default (state = defaultState, action) => {
       })
     case GET_STATE_ITEM:
       return state.set('stateItem', action.data)
+      case GET_COMPONENT_OFFSETTOP:
+      return state.set('componentOffsetTop', action.data)
     default: 
       return state
   }

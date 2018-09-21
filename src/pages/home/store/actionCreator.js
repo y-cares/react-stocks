@@ -6,7 +6,8 @@ import {
   SHOW_MORE_NEWS,
   GET_JRJH_DATA,
   GET_STATE_DATA,
-  GET_STATE_ITEM
+  GET_STATE_ITEM,
+  GET_COMPONENT_OFFSETTOP
 } from './constants'
 
 const getPzydAction = data => ({
@@ -86,6 +87,11 @@ export const getJrjhList = () => {
 
 export const getStateItemAction = data => ({
   type: GET_STATE_ITEM,
+  data: fromJS(data)
+})
+
+export const getComponentOffsetTop = data => ({
+  type: GET_COMPONENT_OFFSETTOP,
   data: fromJS(data)
 })
 
