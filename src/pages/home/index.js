@@ -52,7 +52,7 @@ class Home extends PureComponent {
   render() {
     return (
       <Fragment>
-        <Nav tabNavClick={(index) => this.tabNavClick(index)}/>
+        <Nav />
         <div id="views"
           styleName="home"
           ref={el => this._home = el}
